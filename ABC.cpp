@@ -27,7 +27,7 @@ public :
 
     void display(void)
     {
-        cout << "\n\nThe sum of " << a << " & " << b << " & " << c << " is ==> " << calc() << "\n\n" << endl;
+        cout << "\n\nThe sum of " << a << " + " << b << " + " << c << " is ==> " << calc() << "\n\n" << endl;
     }
 };
 
