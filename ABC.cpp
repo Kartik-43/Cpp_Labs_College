@@ -5,26 +5,29 @@ using namespace std;
 
 class ABC
 {
-    int a, b, sum;
+    int a, b, c;
 
 public :
-    void setdata(void)
+    void input(void)
     {
-        cout << "Enter number 1 :- ";
+        cout << "Enter Num 1 :- ";
         cin >> a;
 
-        cout << "\nEnter number 2 :- ";
+        cout << "\nEnter Num 2 :- ";
         cin >> b;
+
+        cout << "\nEnter Num 3 :- ";
+        cin >> c;
     }
 
-    void calculate(void)
+    int calc(void)
     {
-        sum = a + b;
+        return (a+b+c);
     }
 
     void display(void)
     {
-        cout << "\n\nThe sum of " << a << " and " << b << " is ==> " << sum << "\n\n" << endl;
+        cout << "\n\nThe sum of " << a << " & " << b << " & " << c << " is ==> " << calc() << "\n\n" << endl;
     }
 };
 
@@ -35,8 +38,7 @@ int main()
     cout<< "IT - 1\nShift 1\n\n\n"<<endl;
 
     ABC o1;
-    o1.setdata();
-    o1.calculate();
+    o1.input();
     o1.display();
 
     return 0;
